@@ -48,6 +48,9 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
                 </div>
+                <div class="col-12 col-sm align-self-center">
+					<a role="button" class="btn btn-block nav-link btn-warning" href="#reserveForm">Reserve Table</a>
+				</div>				
             </div>
         </div>
     </header>
@@ -78,8 +81,14 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center"
+                            src="img/buffet.png" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -103,9 +112,72 @@
                 </div>
             </div>
         </div>
+        <br />
+        <div class="row justify-content-center">
+			<div class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+            <div class="card-body">
+                <form id="reserveForm">
+                    <div class="form-group row">
+                        <div class="col-12 col-sm-2">
+                           <label class="col-form-label"><strong>Number of Guests</strong></label>
+                        </div>
+                        <div class="col-12 col-sm">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="guests" id="guestOne" value="one" >
+                                <label for="guestOne" class="form-check-label">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="guests" id="guestTwo" value="two" >
+                                <label for="guestTwo" class="form-check-label">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="guests" id="guestThree" value="three">
+                                <label for="guestThree" class="form-check-label">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="guests" id="guestFour" value="four" >
+                                <label for="guestFour" class="form-check-label">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="guests" id="guestFive" value="five" >
+                                <label for="guestFive" class="form-check-label">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="guests" id="guestSix" value="six" >
+                                <label for="guestSix" class="form-check-label">6</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 col-sm-2">
+                            <label class="col-form-label"><strong>Date& Time</strong></label>
+                        </div>
+                        <div class="col-12 col-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" name="date" id="date" placeholder="DD/MM/YYYY" />
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control" name="time" id="time" placeholder="H:M:S" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col">
+                            <input type="submit" class="btn btn-round-md btn-primary" value="Reserve" />
+                        </div>
+                    </div>
+                </form>
+			</div>
+			</div>
+		</div>
     </div>
-
-    <footer class="footer   ">
+    
+    <br />
+    
+    <footer class="footer  ">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
